@@ -24,4 +24,4 @@ if uploaded_file is not None:
         cls_id = int(box.cls[0])
         confidence = box.conf[0]
         label = model.names[cls_id]
-        st.write(f"- {label}: {confidence:.2f}")
+        st.write(f"- {label}: {confidence * 100:.2f}%")
